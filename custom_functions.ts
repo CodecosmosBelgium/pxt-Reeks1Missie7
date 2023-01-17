@@ -11,7 +11,7 @@ namespace CodeCosmos {
     //% block="volgend karretje"
     export function nextCart() {
         typeOfCart = randint(0,3)
-        player.execute(`scoreboard players set @a ${typeOfCart}`)
+        player.execute(`scoreboard players set @a cartType ${typeOfCart}`)
         player.execute("function levels/nextCart")
     }
 
