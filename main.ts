@@ -1,1 +1,1 @@
-
+let typeOfCart = 0
