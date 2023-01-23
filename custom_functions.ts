@@ -17,25 +17,7 @@ namespace CodeCosmos {
 
     //% block="detecteer minecart $type"
     export function detectCart(type:CartType) {
-        const detectPosition = world(0,0,0)
-
-        if(blocks.testForBlock(GLASS, detectPosition) && typeOfCart === type) {
-            return true
-        }
-
-        if (blocks.testForBlock(DIAMOND_BLOCK, detectPosition) && typeOfCart === type) {
-            return true
-        }
-
-        if (blocks.testForBlock(GOLD_BLOCK, detectPosition) && typeOfCart === type) {
-            return true
-        }
-
-        if (blocks.testForBlock(REDSTONE_BLOCK, detectPosition) && typeOfCart === type) {
-            return true
-        }
-
-        return false
+        return typeOfCart === type
     }
 
 }
