@@ -7,8 +7,8 @@ enum CartType {
 
 //% color=190 weight=100 block="CodeCosmos"
 namespace CodeCosmos {
-
     //% block="volgend karretje"
+    //% block.loc.nl="volgend karretje nederlands"
     export function nextCart() {
         typeOfCart = randint(0,3)
         player.execute(`scoreboard players set @a cartType ${typeOfCart}`)
