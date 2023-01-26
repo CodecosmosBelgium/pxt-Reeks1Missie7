@@ -28,14 +28,15 @@ namespace CodeCosmos {
     //% block="volgend karretje"
     //% block.loc.nl="volgend karretje nederlands"
     export function nextCart() {
-        typeOfCart = randint(0,3)
-        player.execute(`scoreboard players set @a cartType ${typeOfCart}`)
-        player.execute("function levels/nextCart")
+        player.execute("execute @a[tag=!cartInGame] ~ ~ ~ function levels/nextCart")
     }
 
-    //% block="detecteer minecart $type"
-    export function detectCart(type:Cart) {
-        return typeOfCart === type
+    //% block="detecteer minecart $typeOfCart"
+    export function detectCart(typeOfCart:Cart) {
+        const detectPosition = world(166, 44, 349)
+        const statusBlocks = [Block.DiamondBlock,Block.GreenWool, Block.RedConcrete, Block.GoldBlock]
+        
+        return blocks.testForBlock(statusBlocks[typeOfCart], detectPosition)
     }
 
     //% block="zet schakelaar $lever $status"
