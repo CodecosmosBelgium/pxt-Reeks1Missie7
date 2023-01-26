@@ -40,7 +40,7 @@ namespace CodeCosmos {
 
     //% block="zet schakelaar $lever $status"
     export function setLever(lever:Lever, status:LeverStatus) {
-        const detectPositions = [world(173, 44, 327), world(161, 44, 327), world(173, 44, 323), world(161, 44, 323)]
+        const detectPositions = [world(166, 44, 350), world(165, 44, 350), world(164, 44, 350), world(163, 44, 350)]
         player.say(`lever: ${lever}; status: ${status}`)
 
 
