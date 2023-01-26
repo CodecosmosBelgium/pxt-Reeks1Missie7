@@ -1,8 +1,12 @@
 enum Cart {
-    //% block="Lege minecart"
+    //% block="lege minecart"
     EmptyCart,
-    //% block="Redstone minecart"
+    //% block="redstone minecart"
     RedstoneCart,
+    //% block="kist minecart"
+    ChestCart,
+    //% block="fornuis minecart"
+    FurnaceCart,
 }
 
 enum Lever {
