@@ -16,8 +16,6 @@ enum Lever {
     Lever2,
     //% block="3"
     Lever3,
-    //% block="4"
-    Lever4,
 }
 
 enum LeverStatus {
@@ -45,28 +43,22 @@ namespace CodeCosmos {
     //% block="zet schakelaar $lever $status"
     export function setLever(lever:Lever, status:LeverStatus) {
         const detectPositions = [world(166, 44, 350), world(165, 44, 350), world(164, 44, 350), world(163, 44, 350)]
-        player.say(`lever: ${lever}; status: ${status}`)
 
 
         if(blocks.testForBlock(Block.GreenWool, detectPositions[lever]) !== !!(status === LeverStatus.On)) {
             blocks.place(status === LeverStatus.On ? Block.GreenWool : Block.RedConcrete, detectPositions[lever])
             if(lever === Lever.Lever1) {
-                agent.teleport(world(173,44,327),CompassDirection.West)
+                agent.teleport(world(169,44,326),CompassDirection.East)
                 agent.interact(FourDirection.Forward)
                 return;
             }
             if (lever === Lever.Lever2) {
-                agent.teleport(world(161, 44, 327), CompassDirection.East)
+                agent.teleport(world(169, 44, 324), CompassDirection.East)
                 agent.interact(FourDirection.Forward)
                 return;
             }
             if (lever === Lever.Lever3) {
-                agent.teleport(world(173, 44, 323), CompassDirection.West)
-                agent.interact(FourDirection.Forward)
-                return;
-            }
-            if (lever === Lever.Lever4) {
-                agent.teleport(world(161, 44, 323), CompassDirection.East)
+                agent.teleport(world(165, 44, 324), CompassDirection.West)
                 agent.interact(FourDirection.Forward)
                 return;
             }
