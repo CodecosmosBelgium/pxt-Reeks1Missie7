@@ -14,6 +14,6 @@ player.onChat("oef6", function () {
 ```template
 ```
 
-## Karretjes sorteren
+## Mijnkarretjes sorteren
 
 Gebruik het leerplatform om de oefeningen op te lossen.
