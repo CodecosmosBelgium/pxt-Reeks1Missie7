@@ -32,7 +32,7 @@ namespace CodeCosmos {
         player.execute("execute @a[tag=!cartInGame] ~ ~ ~ function levels/nextCart")
     }
 
-    //% block="detecteer minecart $typeOfCart"
+    //% block="detecteer $typeOfCart"
     export function detectCart(typeOfCart:Cart) {
         const detectPosition = world(166, 44, 349)
         const statusBlocks = [Block.DiamondBlock,Block.GreenWool, Block.RedConcrete, Block.GoldBlock]
