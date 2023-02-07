@@ -11,16 +11,15 @@
         "main.ts",
         "custom_functions.ts",
         "t_level1.md",
-        "_locales/nl/Reeks1Missie7-strings.json",
-        "_locales/nl/Reeks1Missie7-jsdoc-strings.json"
+        "_locales/nl/Reeks1Missie7-strings.json"
     ],
     "testFiles": [
         "test.ts"
     ],
     "public": true,
     "targetVersions": {
-        "target": "1.6.30",
-        "targetId": "minecraft"
+        "targetId": "minecraft",
+        "target": "1.6.30"
     },
     "supportedTargets": [
         "minecraft"
