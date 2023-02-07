@@ -10,9 +10,7 @@
         "main.blocks",
         "main.ts",
         "custom_functions.ts",
-        "t_level1.md",
-        "_locales/nl/Reeks1Missie7-strings.json",
-        "tutorial-info-cache.json"
+        "_locales/nl/Reeks1Missie7-strings.json"
     ],
     "testFiles": [
         "test.ts"
