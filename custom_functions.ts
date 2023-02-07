@@ -28,6 +28,7 @@ enum LeverStatus {
 //% color=190 weight=100 block="CodeCosmos"
 namespace CodeCosmos {
     //% block="volgend karretje"
+    //% block.loc.nl="volgend NL karretje"
     export function nextCart() {
         player.execute("execute @a[tag=!cartInGame] ~ ~ ~ function levels/nextCart")
     }
