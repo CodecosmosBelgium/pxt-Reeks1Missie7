@@ -9,8 +9,7 @@
     "files": [
         "main.blocks",
         "main.ts",
-        "custom_functions.ts",
-        "_locales/nl/Reeks1Missie7-strings.json"
+        "custom_functions.ts"
     ],
     "testFiles": [
         "test.ts"
