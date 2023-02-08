@@ -6,7 +6,6 @@ player.onChat("oef6", function () {
     if (CodeCosmos.detectCart(Cart.EmptyCart)) {
     CodeCosmos.setLever(Lever.Lever1, LeverStatus.On)
 } else {
-    CodeCosmos.nextCart()
 }
 })
 ```
