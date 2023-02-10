@@ -1,11 +1,11 @@
 enum Cart {
-    //% block="lege minecart"
+    //% block="lege mijnkar"
     EmptyCart,
-    //% block="redstone minecart"
+    //% block="tnt mijnkar"
     RedstoneCart,
-    //% block="kist minecart"
+    //% block="kist mijnkar"
     ChestCart,
-    //% block="fornuis minecart"
+    //% block="fornuis mijnkar"
     FurnaceCart,
 }
 
