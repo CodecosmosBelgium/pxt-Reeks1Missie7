@@ -11,6 +11,8 @@ player.onChat("oef6", function () {
 ```
 
 ```template
+player.onChat("jump", function () {
+})
 ```
 
 ## Mijnkarretjes sorteren
