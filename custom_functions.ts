@@ -5,7 +5,7 @@ enum Cart {
     RedstoneCart,
     //% block="kist mijnkar"
     ChestCart,
-    //% block="fornuis mijnkar"
+    //% block="trechter mijnkar"
     FurnaceCart,
 }
 
