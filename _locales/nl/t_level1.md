@@ -3,8 +3,8 @@
 # Missie 1
 ```blocks
 player.onChat("oef6", function () {
-    if (CodeCosmosEN.detectCart(Cart.EmptyCart)) {
-    CodeCosmosEN.setLever(Lever.Lever1, LeverStatus.On)
+    if (CodeCosmos.detectCart(Cart.EmptyCart)) {
+    CodeCosmos.setLever(Lever.Lever1, LeverStatus.On)
 } else {
 }
 })
@@ -17,4 +17,4 @@ player.onChat("jump", function () {
 
 ## Mijnkarretjes sorteren
 
-Use the learning platform to solve the exercise.
+Gebruik het leerplatform om de oefeningen op te lossen.

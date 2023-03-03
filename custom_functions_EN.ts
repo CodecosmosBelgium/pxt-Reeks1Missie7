@@ -1,15 +1,15 @@
-enum Cart {
-    //% block="lege mijnkar"
+enum CartEN {
+    //% block="empty cart"
     EmptyCart,
-    //% block="tnt mijnkar"
+    //% block="tnt cart"
     RedstoneCart,
-    //% block="kist mijnkar"
+    //% block="chest cart"
     ChestCart,
-    //% block="trechter mijnkar"
+    //% block="hopper cart"
     FurnaceCart,
 }
 
-enum Lever {
+enum LeverEN {
     //% block="1"
     Lever1,
     //% block="2"
@@ -18,7 +18,7 @@ enum Lever {
     Lever3,
 }
 
-enum LeverStatus {
+enum LeverStatusEN {
     //% block="aan"
     On,
     //% block="uit"
@@ -26,29 +26,29 @@ enum LeverStatus {
 }
 
 //% color=190 weight=100 block="CodeCosmos"
-namespace CodeCosmos {
-    //% block="volgend karretje"
+namespace CodeCosmosEN {
+    //% block="next cart"
     export function nextCart() {
         player.execute("execute @a[tag=!cartInGame] ~ ~ ~ function levels/nextCart")
     }
 
-    //% block="detecteer $typeOfCart"
-    export function detectCart(typeOfCart:Cart) {
+    //% block="detect $typeOfCart"
+    export function detectCart(typeOfCart: Cart) {
         const detectPosition = world(166, 44, 349)
-        const statusBlocks = [Block.DiamondBlock,Block.GreenWool, Block.RedConcrete, Block.GoldBlock]
-        
+        const statusBlocks = [Block.DiamondBlock, Block.GreenWool, Block.RedConcrete, Block.GoldBlock]
+
         return blocks.testForBlock(statusBlocks[typeOfCart], detectPosition)
     }
 
-    //% block="zet schakelaar $lever $status"
-    export function setLever(lever:Lever, status:LeverStatus) {
+    //% block="set switch $lever $status"
+    export function setLever(lever: Lever, status: LeverStatus) {
         const detectPositions = [world(166, 44, 350), world(165, 44, 350), world(164, 44, 350), world(163, 44, 350)]
 
 
-        if(blocks.testForBlock(Block.GreenWool, detectPositions[lever]) !== !!(status === LeverStatus.On)) {
+        if (blocks.testForBlock(Block.GreenWool, detectPositions[lever]) !== !!(status === LeverStatus.On)) {
             blocks.place(status === LeverStatus.On ? Block.GreenWool : Block.RedConcrete, detectPositions[lever])
-            if(lever === Lever.Lever1) {
-                agent.teleport(world(169,44,326),CompassDirection.East)
+            if (lever === Lever.Lever1) {
+                agent.teleport(world(169, 44, 326), CompassDirection.East)
                 agent.interact(FourDirection.Forward)
                 return;
             }
@@ -63,7 +63,7 @@ namespace CodeCosmos {
                 return;
             }
         }
-        
+
     }
 
 }

@@ -10,7 +10,9 @@
         "main.blocks",
         "main.ts",
         "custom_functions.ts",
-        "t_level1.md"
+        "t_level1.md",
+        "custom_functions_EN.ts",
+        "_locales/nl/t_level1.md"
     ],
     "testFiles": [
         "test.ts"
