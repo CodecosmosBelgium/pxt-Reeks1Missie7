@@ -4,7 +4,7 @@
 ```blocks
 player.onChat("oef6", function () {
     if (CodeCosmosEN.detectCart(CartEN.EmptyCart)) {
-    CodeCosmosEN.setLever(LeverEN.Lever1, LeverStatus.On)
+    CodeCosmosEN.setLever(LeverEN.Lever1, LeverStatusEN.On)
 } else {
 }
 })
