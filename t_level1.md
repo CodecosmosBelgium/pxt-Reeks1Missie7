@@ -1,10 +1,10 @@
 ### @hideIteration true
 ### @flyoutOnly true
-# Missie 1
+# Mission 7
 ```blocks
 player.onChat("oef6", function () {
-    if (CodeCosmosEN.detectCart(Cart.EmptyCart)) {
-    CodeCosmosEN.setLever(Lever.Lever1, LeverStatus.On)
+    if (CodeCosmosEN.detectCart(CartEN.EmptyCart)) {
+    CodeCosmosEN.setLever(LeverEN.Lever1, LeverStatus.On)
 } else {
 }
 })
@@ -15,6 +15,6 @@ player.onChat("jump", function () {
 })
 ```
 
-## Mijnkarretjes sorteren
+## Sorting minecarts
 
 Use the learning platform to solve the exercise.
